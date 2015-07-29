@@ -1,0 +1,13 @@
+#
+# Taint Analysis Start
+#
+[4281083]mov cl, byte ptr [eax]	05D47AA0
+[4281085]mov byte ptr [ebp-0x249], cl	05D47EC0
+[4281097]mov al, byte ptr [ebp-0x249]	05D48700
+[4281103]mov byte ptr [edx], al	05D48B20
+[4281135]cmp byte ptr [ebp-0x249], 0x0	05D4CD20
+[4281152]mov dl, byte ptr [ebp+ecx*1-0xcc]	05E49150
+[4281159]mov byte ptr [ebp-0x175], dl	05E49570
+[4281165]movsx eax, byte ptr [ebp-0x175]	05E49990
+[4281174]push eax	05E4AA10
+[4281228]push edx	05E66810

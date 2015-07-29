@@ -1,0 +1,1 @@
+pin.exe -t egoist.dll -- "taint test.exe"
