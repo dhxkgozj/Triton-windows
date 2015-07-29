@@ -1,0 +1,152 @@
+﻿빌드 시작: 2015-07-24 오전 1:04:01
+     1>2 노드의 "C:\pintool2013\source\tools\egoist\MyPinTool.vcxproj" 프로젝트(Build 대상)입니다.
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(357,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (MyPinTool.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of ControlFlow.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ir\builders\ControlFlow.cpp, ir\ControlFlow.cpp.
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\pintool2013\source\tools\egoist\includes\op_handler /IC:\pintool2013\source\tools\egoist\includes /I..\..\include\pin /I..\..\include\pin\gen /I..\InstLib /I"..\..\..\extras\xed-ia32\include" /I..\..\..\extras\components\include /Zi /nologo /W3 /WX- /Od /Oy- /D TARGET_IA32 /D HOST_IA32 /D TARGET_WINDOWS /D BIGARRAY_MULTIPLIER=1 /D _CRT_SECURE_NO_DEPRECATE /D _SECURE_SCL=0 /D WIN32 /Gm- /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /GR- /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /wd4530 /analyze- /errorReport:prompt /EHs- /EHa- egoist.cpp
+         egoist.cpp
+       Link:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\egoist.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\..\ia32\lib /LIBPATH:"..\..\..\ia32\lib-ext" /LIBPATH:"..\..\..\extras\xed-ia32\lib" pin.lib libxed.lib libcpmt.lib libcmt.lib pinvm.lib kernel32.lib "ntdll-32.lib" /NODEFAULTLIB /MANIFEST:NO /DEBUG /PDB:"..\..\..\egoist.pdb" /OPT:NOREF /TLBID:1 /ENTRY:"Ptrace_DllMainCRTStartup@12" /BASE:"0x55000000" /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\egoist.lib" /MACHINE:X86 /SAFESEH:NO /export:main /DLL Debug\AnalysisProcessor.obj
+         Debug\Inst.obj
+         Debug\Stats.obj
+         Debug\Trace.obj
+         Debug\TritonOperand.obj
+         Debug\PINContextHandler.obj
+         Debug\PINConverter.obj
+         Debug\egoist.obj
+         Debug\BaseIRBuilder.obj
+         Debug\AdcIRBuilder.obj
+         Debug\AddIRBuilder.obj
+         Debug\AndIRBuilder.obj
+         Debug\AndnpdIRBuilder.obj
+         Debug\AndnpsIRBuilder.obj
+         Debug\AndpdIRBuilder.obj
+         Debug\AndpsIRBuilder.obj
+         Debug\BswapIRBuilder.obj
+         Debug\CallIRBuilder.obj
+         Debug\CbwIRBuilder.obj
+         Debug\CdqeIRBuilder.obj
+         Debug\ClcIRBuilder.obj
+         Debug\CldIRBuilder.obj
+         Debug\CmcIRBuilder.obj
+         Debug\CmovbeIRBuilder.obj
+         Debug\CmovbIRBuilder.obj
+         Debug\CmovleIRBuilder.obj
+         Debug\CmovlIRBuilder.obj
+         Debug\CmovnbeIRBuilder.obj
+         Debug\CmovnbIRBuilder.obj
+         Debug\CmovnleIRBuilder.obj
+         Debug\CmovnlIRBuilder.obj
+         Debug\CmovnoIRBuilder.obj
+         Debug\CmovnpIRBuilder.obj
+         Debug\CmovnsIRBuilder.obj
+         Debug\CmovnzIRBuilder.obj
+         Debug\CmovoIRBuilder.obj
+         Debug\CmovpIRBuilder.obj
+         Debug\CmovsIRBuilder.obj
+         Debug\CmovzIRBuilder.obj
+         Debug\CmpIRBuilder.obj
+         Debug\ControlFlow.obj
+         Debug\CqoIRBuilder.obj
+         Debug\CwdeIRBuilder.obj
+         Debug\DecIRBuilder.obj
+         Debug\DivIRBuilder.obj
+         Debug\IdivIRBuilder.obj
+         Debug\ImulIRBuilder.obj
+         Debug\IncIRBuilder.obj
+         Debug\JbeIRBuilder.obj
+         Debug\JbIRBuilder.obj
+         Debug\JleIRBuilder.obj
+         Debug\JlIRBuilder.obj
+         Debug\JmpIRBuilder.obj
+         Debug\JnbeIRBuilder.obj
+         Debug\JnbIRBuilder.obj
+         Debug\JnleIRBuilder.obj
+         Debug\JnlIRBuilder.obj
+         Debug\JnoIRBuilder.obj
+         Debug\JnpIRBuilder.obj
+         Debug\JnsIRBuilder.obj
+         Debug\JnzIRBuilder.obj
+         Debug\JoIRBuilder.obj
+         Debug\JpIRBuilder.obj
+         Debug\JsIRBuilder.obj
+         Debug\JzIRBuilder.obj
+         Debug\LeaIRBuilder.obj
+         Debug\LeaveIRBuilder.obj
+         Debug\MovapdIRBuilder.obj
+         Debug\MovapsIRBuilder.obj
+         Debug\MovdqaIRBuilder.obj
+         Debug\MovdquIRBuilder.obj
+         Debug\MovhlpsIRBuilder.obj
+         Debug\MovhpdIRBuilder.obj
+         Debug\MovhpsIRBuilder.obj
+         Debug\MovIRBuilder.obj
+         Debug\MovlhpsIRBuilder.obj
+         Debug\MovlpdIRBuilder.obj
+         Debug\MovlpsIRBuilder.obj
+         Debug\MovsxIRBuilder.obj
+         Debug\MovzxIRBuilder.obj
+         Debug\MulIRBuilder.obj
+         Debug\NegIRBuilder.obj
+         Debug\NotIRBuilder.obj
+         Debug\OrIRBuilder.obj
+         Debug\OrpdIRBuilder.obj
+         Debug\OrpsIRBuilder.obj
+         Debug\PopIRBuilder.obj
+         Debug\PushIRBuilder.obj
+         Debug\RclIRBuilder.obj
+         Debug\RcrIRBuilder.obj
+         Debug\RetIRBuilder.obj
+         Debug\RolIRBuilder.obj
+         Debug\RorIRBuilder.obj
+         Debug\SarIRBuilder.obj
+         Debug\SbbIRBuilder.obj
+         Debug\SetbeIRBuilder.obj
+         Debug\SetbIRBuilder.obj
+         Debug\SetleIRBuilder.obj
+         Debug\SetlIRBuilder.obj
+         Debug\SetnbeIRBuilder.obj
+         Debug\SetnbIRBuilder.obj
+         Debug\SetnleIRBuilder.obj
+         Debug\SetnlIRBuilder.obj
+         Debug\SetnoIRBuilder.obj
+         Debug\SetnpIRBuilder.obj
+         Debug\SetnsIRBuilder.obj
+         Debug\SetnzIRBuilder.obj
+         Debug\SetoIRBuilder.obj
+         Debug\SetpIRBuilder.obj
+         Debug\SetsIRBuilder.obj
+         Debug\SetzIRBuilder.obj
+         Debug\ShlIRBuilder.obj
+         Debug\ShrIRBuilder.obj
+         Debug\StcIRBuilder.obj
+         Debug\StdIRBuilder.obj
+         Debug\SubIRBuilder.obj
+         Debug\TestIRBuilder.obj
+         Debug\XaddIRBuilder.obj
+         Debug\XchgIRBuilder.obj
+         Debug\XorIRBuilder.obj
+         Debug\XorpdIRBuilder.obj
+         Debug\XorpsIRBuilder.obj
+         Debug\ControlFlow.obj
+         Debug\EflagsBuilder.obj
+         Debug\EflagsExpressions.obj
+         Debug\IRBuilderFactory.obj
+         Debug\NoneOperandTemplate.obj
+         Debug\OneOperandTemplate.obj
+         Debug\OperandTemplate.obj
+         Debug\TwoOperandsTemplate.obj
+         Debug\smt2lib.obj
+         Debug\symbolicElement.obj
+         Debug\symbolicEngine.obj
+         Debug\symbolicVariable.obj
+         Debug\taintEngine.obj
+     1>Debug\ControlFlow.obj : warning LNK4042: 개체가 두 번 이상 지정되었습니다. 나머지는 무시됩니다.
+            ..\..\..\egoist.lib 라이브러리 및 ..\..\..\egoist.exp 개체를 생성하고 있습니다.
+         MyPinTool.vcxproj -> C:\pintool2013\source\tools\egoist\..\..\..\egoist.dll
+     1>"C:\pintool2013\source\tools\egoist\MyPinTool.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:02.54

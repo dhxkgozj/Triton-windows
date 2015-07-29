@@ -1,0 +1,840 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Documents">
+      <UniqueIdentifier>{b8dd2600-7302-4aa7-a99d-1607cd3cd4fb}</UniqueIdentifier>
+      <Extensions>txt;doc;html</Extensions>
+    </Filter>
+    <Filter Include="Source Files\op_handler_source">
+      <UniqueIdentifier>{02dbf7af-4ccf-44e3-ac99-0a95cf82280e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="op_handler_header">
+      <UniqueIdentifier>{963c419b-114b-4bed-92d0-675165396462}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="egoist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TaintEngine\taintEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalysisProcessor\AnalysisProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContextHandler\PINContextHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContextHandler\PINConverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="componets\TritonOperand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="componets\Inst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="symbolicEngine\symbolicElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="symbolicEngine\symbolicEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="symbolicEngine\symbolicVariable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="smt2lib\smt2lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\IRBuilderFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\ControlFlow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\templates\OneOperandTemplate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\templates\OperandTemplate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\templates\TwoOperandsTemplate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\templates\NoneOperandTemplate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\BaseIRBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\AdcIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\AddIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\AndIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\AndnpdIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\AndnpsIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\AndpdIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\AndpsIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\BswapIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CallIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CbwIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CdqeIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\ClcIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CldIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CmcIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CmovbeIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CmovbIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CmovleIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CmovlIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CmovnbeIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CmovnbIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CmovnleIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CmovnlIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CmovnoIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CmovnpIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CmovnsIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CmovnzIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CmovoIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CmovpIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CmovsIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CmovzIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CmpIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\ControlFlow.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CqoIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\CwdeIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\DecIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\DivIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\IdivIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\ImulIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\IncIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\JbeIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\JbIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\JleIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\JlIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\JmpIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\JnbeIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\JnbIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\JnleIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\JnlIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\JnoIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\JnpIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\JnsIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\JnzIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\JoIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\JpIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\JsIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\JzIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\LeaIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\LeaveIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\MovapdIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\MovapsIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\MovdqaIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\MovdquIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\MovhlpsIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\MovhpdIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\MovhpsIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\MovIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\MovlhpsIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\MovlpdIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\MovlpsIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\MovsxIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\MovzxIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\MulIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\NegIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\NotIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\OrIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\OrpdIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\OrpsIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\PopIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\PushIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\RclIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\RcrIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\RetIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\RolIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\RorIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\SarIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\SbbIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\SetbeIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\SetbIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\SetleIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\SetlIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\SetnbeIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\SetnbIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\SetnleIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\SetnlIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\SetnoIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\SetnpIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\SetnsIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\SetnzIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\SetoIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\SetpIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\SetsIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\SetzIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\ShlIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\ShrIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\StcIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\StdIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\SubIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\TestIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\XaddIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\XchgIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\XorIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\XorpdIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\builders\XorpsIRBuilder.cpp">
+      <Filter>Source Files\op_handler_source</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\EflagsBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ir\EflagsExpressions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="componets\Stats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="componets\Trace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes\AnalysisProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\TaintEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\Registers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ContextHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\PINContextHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\PINConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\TritonOperand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\IRBuilderOperand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\SMT2Lib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\SymbolicElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\SymbolicEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\SymbolicVariable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\IRBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\IRBuilderFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\IRBuilderHeaders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\AdcIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\AddIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\AndIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\AndnpdIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\AndnpsIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\AndpdIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\AndpsIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\BswapIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CallIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CbwIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CdqeIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\ClcIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CldIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CmcIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CmovbeIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CmovbIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CmovleIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CmovlIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CmovnbeIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CmovnbIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CmovnleIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CmovnlIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CmovnoIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CmovnpIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CmovnsIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CmovnzIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CmovoIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CmovpIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CmovsIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CmovzIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CmpIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CqoIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\CwdeIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\DecIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\DivIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\IdivIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\ImulIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\IncIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\JbeIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\JbIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\JleIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\JlIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\JmpIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\JnbeIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\JnbIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\JnleIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\JnlIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\JnoIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\JnpIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\JnsIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\JnzIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\JoIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\JpIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\JsIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\JzIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\LeaIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\LeaveIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\MovapdIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\MovapsIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\MovdqaIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\MovdquIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\MovhlpsIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\MovhpdIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\MovhpsIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\MovIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\MovlhpsIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\MovlpdIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\MovlpsIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\MovsxIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\MovzxIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\MulIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\NegIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\NotIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\NullIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\OrIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\OrpdIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\OrpsIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\PopIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\PushIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\RclIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\RcrIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\RetIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\RolIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\RorIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\SarIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\SbbIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\SetbeIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\SetbIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\SetleIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\SetlIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\SetnbeIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\SetnbIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\SetnleIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\SetnlIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\SetnoIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\SetnpIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\SetnsIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\SetnzIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\SetoIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\SetpIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\SetsIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\SetzIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\ShlIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\ShrIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\StcIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\StdIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\SubIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\TestIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\XaddIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\XchgIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\XorIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\XorpdIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\op_handler\XorpsIRBuilder.h">
+      <Filter>op_handler_header</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ControlFlow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\EflagsBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\EflagsExpressions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\Stats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\BaseIRBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\Colors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\Trace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

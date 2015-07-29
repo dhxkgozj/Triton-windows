@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{639EF517-FCFC-408E-9500-71F0DC0458DB}</ProjectGuid>
+    <RootNamespace>MyPinTool</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>egoist</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/EHs- /EHa- %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\pintool2013\source\tools\egoist\includes\op_handler;C:\pintool2013\source\tools\egoist\includes;..\..\include\pin;..\..\include\pin\gen;..\InstLib;..\..\..\extras\xed-ia32\include;..\..\..\extras\components\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TARGET_IA32;HOST_IA32;TARGET_WINDOWS;BIGARRAY_MULTIPLIER=1;_CRT_SECURE_NO_DEPRECATE;_SECURE_SCL=0;WIN32</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/export:main %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>pin.lib;libxed.lib;libcpmt.lib;libcmt.lib;pinvm.lib;kernel32.lib;ntdll-32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\ia32\lib;..\..\..\ia32\lib-ext;..\..\..\extras\xed-ia32\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>NotSet</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EntryPointSymbol>Ptrace_DllMainCRTStartup%4012</EntryPointSymbol>
+      <BaseAddress>0x55000000</BaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AllowIsolation>true</AllowIsolation>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/EHs- /EHa- %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include\pin;..\..\include\pin\gen;..\InstLib;..\..\..\extras\xed-intel64\include;..\..\..\extras\components\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TARGET_IA32E;HOST_IA32E;TARGET_WINDOWS;BIGARRAY_MULTIPLIER=1;_CRT_SECURE_NO_DEPRECATE;_SECURE_SCL=0;WIN32</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/export:main %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>pin.lib;libxed.lib;libcpmt.lib;libcmt.lib;pinvm.lib;kernel32.lib;ntdll-64.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\intel64\lib;..\..\..\intel64\lib-ext;..\..\..\extras\xed-intel64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>NotSet</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EntryPointSymbol>Ptrace_DllMainCRTStartup</EntryPointSymbol>
+      <BaseAddress>0xC5000000</BaseAddress>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AllowIsolation>true</AllowIsolation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/EHs- /EHa- %(AdditionalOptions)</AdditionalOptions>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\include\gen;..\InstLib;..\..\..\extras\xed-ia32\include;..\..\..\extras\components\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TARGET_IA32;HOST_IA32;TARGET_WINDOWS;BIGARRAY_MULTIPLIER=1;_CRT_SECURE_NO_DEPRECATE;_SECURE_SCL=0;WIN32</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <DisableSpecificWarnings>4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/export:main %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>pin.lib;libxed.lib;libcpmt.lib;libcmt.lib;pinvm.lib;kernel32.lib;ntdll-32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\ia32\lib;..\..\..\ia32\lib-ext;..\..\..\extras\xed-ia32\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>NotSet</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <EntryPointSymbol>Ptrace_DllMainCRTStartup%4012</EntryPointSymbol>
+      <BaseAddress>0x55000000</BaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/EHs- /EHa- %(AdditionalOptions)</AdditionalOptions>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\include\gen;..\InstLib;..\..\..\extras\xed-intel64\include;..\..\..\extras\components\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TARGET_IA32E;HOST_IA32E;TARGET_WINDOWS;BIGARRAY_MULTIPLIER=1;_CRT_SECURE_NO_DEPRECATE;_SECURE_SCL=0;WIN32</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <DisableSpecificWarnings>4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/export:main %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>pin.lib;libxed.lib;libcpmt.lib;libcmt.lib;pinvm.lib;kernel32.lib;ntdll-64.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\intel64\lib;..\..\..\intel64\lib-ext;..\..\..\extras\xed-intel64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>NotSet</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <EntryPointSymbol>Ptrace_DllMainCRTStartup</EntryPointSymbol>
+      <BaseAddress>0xC5000000</BaseAddress>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AnalysisProcessor\AnalysisProcessor.cpp" />
+    <ClCompile Include="componets\Inst.cpp" />
+    <ClCompile Include="componets\Stats.cpp" />
+    <ClCompile Include="componets\Trace.cpp" />
+    <ClCompile Include="componets\TritonOperand.cpp" />
+    <ClCompile Include="ContextHandler\PINContextHandler.cpp" />
+    <ClCompile Include="ContextHandler\PINConverter.cpp" />
+    <ClCompile Include="egoist.cpp" />
+    <ClCompile Include="ir\BaseIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\AdcIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\AddIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\AndIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\AndnpdIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\AndnpsIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\AndpdIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\AndpsIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\BswapIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CallIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CbwIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CdqeIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\ClcIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CldIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CmcIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CmovbeIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CmovbIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CmovleIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CmovlIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CmovnbeIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CmovnbIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CmovnleIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CmovnlIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CmovnoIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CmovnpIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CmovnsIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CmovnzIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CmovoIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CmovpIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CmovsIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CmovzIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CmpIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\ControlFlow.cpp" />
+    <ClCompile Include="ir\builders\CqoIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\CwdeIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\DecIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\DivIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\IdivIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\ImulIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\IncIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\JbeIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\JbIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\JleIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\JlIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\JmpIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\JnbeIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\JnbIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\JnleIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\JnlIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\JnoIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\JnpIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\JnsIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\JnzIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\JoIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\JpIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\JsIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\JzIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\LeaIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\LeaveIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\MovapdIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\MovapsIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\MovdqaIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\MovdquIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\MovhlpsIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\MovhpdIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\MovhpsIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\MovIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\MovlhpsIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\MovlpdIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\MovlpsIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\MovsxIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\MovzxIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\MulIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\NegIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\NotIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\OrIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\OrpdIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\OrpsIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\PopIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\PushIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\RclIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\RcrIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\RetIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\RolIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\RorIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\SarIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\SbbIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\SetbeIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\SetbIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\SetleIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\SetlIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\SetnbeIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\SetnbIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\SetnleIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\SetnlIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\SetnoIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\SetnpIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\SetnsIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\SetnzIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\SetoIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\SetpIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\SetsIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\SetzIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\ShlIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\ShrIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\StcIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\StdIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\SubIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\TestIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\XaddIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\XchgIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\XorIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\XorpdIRBuilder.cpp" />
+    <ClCompile Include="ir\builders\XorpsIRBuilder.cpp" />
+    <ClCompile Include="ir\ControlFlow.cpp" />
+    <ClCompile Include="ir\EflagsBuilder.cpp" />
+    <ClCompile Include="ir\EflagsExpressions.cpp" />
+    <ClCompile Include="ir\IRBuilderFactory.cpp" />
+    <ClCompile Include="ir\templates\NoneOperandTemplate.cpp" />
+    <ClCompile Include="ir\templates\OneOperandTemplate.cpp" />
+    <ClCompile Include="ir\templates\OperandTemplate.cpp" />
+    <ClCompile Include="ir\templates\TwoOperandsTemplate.cpp" />
+    <ClCompile Include="smt2lib\smt2lib.cpp" />
+    <ClCompile Include="symbolicEngine\symbolicElement.cpp" />
+    <ClCompile Include="symbolicEngine\symbolicEngine.cpp" />
+    <ClCompile Include="symbolicEngine\symbolicVariable.cpp" />
+    <ClCompile Include="TaintEngine\taintEngine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes\AnalysisProcessor.h" />
+    <ClInclude Include="includes\BaseIRBuilder.h" />
+    <ClInclude Include="includes\Colors.h" />
+    <ClInclude Include="includes\ContextHandler.h" />
+    <ClInclude Include="includes\ControlFlow.h" />
+    <ClInclude Include="includes\EflagsBuilder.h" />
+    <ClInclude Include="includes\EflagsExpressions.h" />
+    <ClInclude Include="includes\IRBuilder.h" />
+    <ClInclude Include="includes\IRBuilderFactory.h" />
+    <ClInclude Include="includes\IRBuilderHeaders.h" />
+    <ClInclude Include="includes\IRBuilderOperand.h" />
+    <ClInclude Include="includes\op_handler\AdcIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\AddIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\AndIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\AndnpdIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\AndnpsIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\AndpdIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\AndpsIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\BswapIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CallIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CbwIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CdqeIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\ClcIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CldIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CmcIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CmovbeIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CmovbIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CmovleIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CmovlIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CmovnbeIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CmovnbIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CmovnleIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CmovnlIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CmovnoIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CmovnpIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CmovnsIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CmovnzIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CmovoIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CmovpIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CmovsIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CmovzIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CmpIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CqoIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\CwdeIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\DecIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\DivIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\IdivIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\ImulIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\IncIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\JbeIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\JbIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\JleIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\JlIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\JmpIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\JnbeIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\JnbIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\JnleIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\JnlIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\JnoIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\JnpIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\JnsIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\JnzIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\JoIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\JpIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\JsIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\JzIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\LeaIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\LeaveIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\MovapdIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\MovapsIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\MovdqaIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\MovdquIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\MovhlpsIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\MovhpdIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\MovhpsIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\MovIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\MovlhpsIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\MovlpdIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\MovlpsIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\MovsxIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\MovzxIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\MulIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\NegIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\NotIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\NullIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\OrIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\OrpdIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\OrpsIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\PopIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\PushIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\RclIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\RcrIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\RetIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\RolIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\RorIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\SarIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\SbbIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\SetbeIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\SetbIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\SetleIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\SetlIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\SetnbeIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\SetnbIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\SetnleIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\SetnlIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\SetnoIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\SetnpIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\SetnsIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\SetnzIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\SetoIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\SetpIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\SetsIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\SetzIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\ShlIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\ShrIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\StcIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\StdIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\SubIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\TestIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\XaddIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\XchgIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\XorIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\XorpdIRBuilder.h" />
+    <ClInclude Include="includes\op_handler\XorpsIRBuilder.h" />
+    <ClInclude Include="includes\PINContextHandler.h" />
+    <ClInclude Include="includes\PINConverter.h" />
+    <ClInclude Include="includes\Registers.h" />
+    <ClInclude Include="includes\SMT2Lib.h" />
+    <ClInclude Include="includes\Stats.h" />
+    <ClInclude Include="includes\SymbolicElement.h" />
+    <ClInclude Include="includes\SymbolicEngine.h" />
+    <ClInclude Include="includes\SymbolicVariable.h" />
+    <ClInclude Include="includes\TaintEngine.h" />
+    <ClInclude Include="includes\Trace.h" />
+    <ClInclude Include="includes\TritonOperand.h" />
+    <ClInclude Include="includes\types.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
